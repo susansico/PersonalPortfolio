@@ -1,0 +1,300 @@
+/* personalPortfolio personalPortfolio.css */
+
+/* Tags */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font: 100%/1.5 Arial, Verdana, sans-serif;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+nav {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+nav .NavListItem {
+    margin: 0;
+    padding: 5px;
+}
+
+nav .ResumeListItem {
+    margin: 0;
+    padding: 5px;
+}
+
+nav .TargetListItem {
+    margin: 0;
+    padding: 5px;
+}
+
+main {
+
+    margin: 0;
+    padding: 20px 0;
+    display: block;
+}
+
+figure {
+    padding: 30px 0 0 0;
+}
+
+
+/* Ids */
+#HeaderRow {
+    margin-top: 0;
+    padding: 0;
+    background: #F90;
+    box-shadow: inset 0 0 1.5em #ec6c4c;
+    border-radius: 2px;
+}
+
+#HeadingName{
+    font: bold 33px Tahoma, Geneva, serif;
+    padding: 0 0 10px 10px;
+}
+
+#HeadingName a {
+    color: #000;
+    text-shadow: #e52d00 1px 1px 1px;
+    text-decoration: none;
+}
+
+#HeadingName a:hover, #HeadingName a:focus, #HeadingName a:active {
+    color: #000;
+    text-shadow: #e52d00 2px 2px 2px;
+    text-decoration: none;
+}
+
+#ResumeLink {
+    font: 500 18px Tahoma, Geneva, serif;
+    color: #b72400;
+    text-shadow: #e52d00 1px 1px 1px;
+}
+
+#BusinessCardOrangeHalf {
+    margin-top: 50px;
+    padding: 15px 10px 100px 0;
+    border-top: 2px solid #ec6c4c;
+    border-bottom: 2px solid #ec6c4c;
+    border-left: 2px solid #ec6c4c;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #e52d00;
+}
+
+#BusinessCardWhiteHalf {
+    margin-top: 50px;
+    padding: 15px 0 14px 0;
+    border-top: 2px solid #ec6c4c;
+    border-bottom: 2px solid #ec6c4c;
+    border-right: 2px solid #ec6c4c;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #FFF;
+}
+
+#BusinessCardJobTitle  {
+    font: bold 24px Arial, Verdana, sans-serif;
+    color: #000;
+    text-shadow: #000 1px 1px 1px;
+    margin: 20px 0 50px 10px;
+}
+
+#BusinessCardJobTitleWhite {
+    font: bold 24px Arial, Verdana, sans-serif;
+    color: #FFF;
+    text-shadow: #FFF 1px 1px 1px;
+    margin: 20px 0 50px;
+}
+
+#MobileAndEmail {
+    font: 12px Arial, Verdana, sans-serif;
+    color: #000;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 20px 10px;
+}
+
+#Mobile {
+    margin: 50px 0 0 0;
+    padding: 0;
+}
+
+#Email {
+    margin: 0;
+    padding: 0;
+}
+
+#Mobile a, #Email a {
+    color: #000;
+    text-decoration: none;
+}
+
+#MobileLabel {
+    color: #ec6c4c;
+    margin: 0;
+    padding:0 2px 0 0;
+}
+
+#EmailLabel {
+    color: #ec6c4c;
+    margin: 0;
+    padding: 0 9px 0 0;
+}
+
+#AboutWords {
+    font: 165%/1.7em "Josefin San", sans-serif;
+    color: #ea5632;
+    text-shadow: #F90 1px 0 1px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+#AboutWords p {
+    margin: 0 0 20px 20px;
+}
+
+#AboutImage img {
+    margin: 30px 0 0 0;
+    border: 5px solid #0c0c0c;
+    border-radius: 10px;
+}
+
+
+/* Classes */
+.NavLink {
+    font: 700 19px Roboto, sans-serif;
+    color: #000;
+    text-shadow: #191919 1px 1px 1px;
+    padding: 0 10px;
+    background: none;
+}
+
+.nav>li>.NavLink:hover, .nav>li>.NavLink:focus {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    margin-top: 0;
+    text-shadow: #191919 1px 1px 1px;
+    background: #F90;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.nav>li>.NavLink:active {
+      font-weight: bold;
+      font-size: 22px;
+      color: #000;
+      text-shadow: #191919 1px 1px 1px;
+      margin-top: 0;
+      background: #F90;
+      border: none;
+      box-shadow: none;
+}
+
+.nav>li>#ResumeLink:hover, .nav>li>#ResumeLink:focus {
+    font-weight: 500;
+    font-size: 19px;
+    color: #b72400;
+    text-shadow: #e52d00 1px 1px 1px;
+    margin-top: 0;
+    background: #F90;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.nav>li>#ResumeLink:active {
+    font-weight: 500;
+    font-size: 19px;
+    color: #b72400;
+    text-shadow: #e52d00 1px 1px 1px;
+    margin-top: 0;
+    background: #F90;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.TargetLink {
+    font: bold 15px Arial, Verdana, sans-serif;
+    color: #e52d00;
+    text-shadow: #ec6c4c 1px 1px 1px;
+    margin: 4px 0 0;
+    padding: 0 10px;
+    background: none;
+}
+
+.nav>li>.TargetLink:hover, .nav>li>.TargetLink:focus {
+    font-weight: bold;
+    font-size: 16px;
+    color: #e52d00;
+    text-shadow: #ec6c4c 1px 1px 1px;
+    background: #F90;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.nav>li>.TargetLink:active {
+    font-weight: bold;
+    font-size: 16px;
+    color: #e52d00;
+    text-shadow: #ec6c4c 1px 1px 1px;
+    background: #F90;
+    border: none;
+    box-shadow: none;
+}
+
+.HeadingViews {
+    font: 500 30px Tahoma, Geneva, serif;
+    color: #e52d00;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.TechnologyLabels {
+    font: 700 18px Arial, Verdana, sans-serif;
+    color: #000;
+    text-align: right;
+}
+
+.TechnologySkills {
+    font: 16px Arial, Verdana, sans-serif;
+    color: #000;
+    text-align: left;
+    padding: 3px 0 0 10px;
+}
+
+.ProjectListStyle {
+    margin: 0 0 0 -10px; /* Where did the margin come from? */
+    padding: 0;
+}
+
+.ProjectListItemStyle {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.ProjectName {
+    font: 600 115%/1.0em "Josefin Sans", sans-serif;
+}
+
+.ProjectDescription {
+    font: 600 170%/1.0em "Josefin Sans", san-serif;
+    color: #ce2800;
+    text-shadow: #e52d00 1px 1px 1px;
+    text-align: center;
+    margin: 10px 0 0 -15px;
+}
+
