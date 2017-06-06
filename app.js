@@ -19,8 +19,3 @@ app.config(function($routeProvider) {
             controller: "AboutController"
         });
 });
-
-app.controller("MainController", ["$scope", function($scope) {
-
-}]);
-
