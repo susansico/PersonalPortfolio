@@ -181,9 +181,10 @@ figure {
 #AboutImage img {
     margin: 30px 0 0 0;
     border: 1px solid #ec6c4c;
+    -webkit-box-shadow: 0 0 15px #ec6c4c;
+    box-shadow: 0 0 15px #ec6c4c;
     border-radius: 10px;
 }
-
 
 /***** Classes *****/
 .NavLink {
