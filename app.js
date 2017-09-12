@@ -1,6 +1,6 @@
 /* personalPortfolio app.js */
 
-var app = angular.module("PersonalPortfolioApp", ["ngRoute"]);
+var app = angular.module("PersonalPortfolioApp", ["ngRoute", "ui.bootstrap"]);
 
 app.config(function($routeProvider) {
 
@@ -19,3 +19,8 @@ app.config(function($routeProvider) {
             controller: "AboutController"
         });
 });
+
+app.controller("NavbarCollapse",["$scope", function($scope) {
+
+    $scope.isNavCollapsed = true;
+}]);
