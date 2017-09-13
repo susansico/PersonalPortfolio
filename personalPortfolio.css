@@ -56,13 +56,14 @@ figure {
 
 #HeadingName{
     font: bold 33px Tahoma, Geneva, serif;
-    padding: 0 0 10px 10px;
-}
-
-#HeadingName a {
     color: #000;
     text-shadow: #000 1px 1px 1px;
     text-decoration: none;
+    padding: 0 200px 10px 10px;
+}
+
+#HeadingName a {
+
 }
 
 #HeadingName a:hover, #HeadingName a:focus, #HeadingName a:active {
@@ -186,6 +187,7 @@ figure {
     border-radius: 10px;
 }
 
+
 /***** Classes *****/
 .NavLink {
     font: 700 19px Roboto, sans-serif;
@@ -195,54 +197,12 @@ figure {
     background: none;
 }
 
-.nav>li>.NavLink:hover, .nav>li>.NavLink:focus {
-    font-weight: bold;
-    font-size: 20px;
-    color: #000;
-    margin-top: 0;
-    text-shadow: #191919 1px 1px 1px;
-    background: #FFF;
-    border: none;
-    box-shadow: none;
-    cursor: pointer;
-}
-
-.nav>li>.NavLink:active {
-      font-weight: bold;
-      font-size: 22px;
-      color: #000;
-      text-shadow: #191919 1px 1px 1px;
-      margin-top: 0;
-      background: #FFF;
-      border: none;
-      box-shadow: none;
-}
-
 .TargetLink {
     font: 800 15px Arial, Verdana, sans-serif;
     color: #000;
     margin: 4px 0 0;
     padding: 0 10px;
     background: none;
-}
-
-.nav>li>.TargetLink:hover, .nav>li>.TargetLink:focus {
-    font-weight: bold;
-    font-size: 16px;
-    color: #000;
-    background: #FFF;
-    border: none;
-    box-shadow: none;
-    cursor: pointer;
-}
-
-.nav>li>.TargetLink:active {
-    font-weight: bold;
-    font-size: 16px;
-    color: #000;
-    background: #FFF;
-    border: none;
-    box-shadow: none;
 }
 
 .HeadingProjectAndAbout {
@@ -291,5 +251,56 @@ figure {
 
 .RepoSite {
     color: #ec6c4c;
+}
+
+/***** Bootstrap Classes *****/
+.navbar-brand {
+    float: none;
+    height: auto;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.nav>li>.NavLink:hover, .nav>li>.NavLink:focus {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    margin-top: 0;
+    text-shadow: #191919 1px 1px 1px;
+    background: #FFF;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.nav>li>.NavLink:active {
+    font-weight: bold;
+    font-size: 22px;
+    color: #000;
+    text-shadow: #191919 1px 1px 1px;
+    margin-top: 0;
+    background: #FFF;
+    border: none;
+    box-shadow: none;
+}
+
+.nav>li>.TargetLink:hover, .nav>li>.TargetLink:focus {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    background: #FFF;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.nav>li>.TargetLink:active {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    background: #FFF;
+    border: none;
+    box-shadow: none;
 }
 
