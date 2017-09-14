@@ -253,7 +253,35 @@ figure {
     color: #ec6c4c;
 }
 
+
 /***** Bootstrap Classes *****/
+.navbar {
+    position: relative;
+    min-height: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.navbar-default {
+    background-color: #FFF;
+    border-color: #FFF;
+}
+
+.navbar-default .navbar-toggle {
+    border: 3px solid #ec6c4c;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #FFF;
+    -webkit-box-shadow: 0 0 15px #ec6c4c;
+    box-shadow: 0 0 15px #ec6c4c
+}
+
+.navbar-default .navbar-collapse {
+    border-color: #FFF;
+}
+
 .navbar-brand {
     float: none;
     height: auto;
@@ -304,3 +332,10 @@ figure {
     box-shadow: none;
 }
 
+
+/***** Media Queries: Bootstrap ******/
+@media (min-width: 768px) {
+     {
+
+    }
+}
