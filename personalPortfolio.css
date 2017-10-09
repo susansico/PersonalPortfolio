@@ -1,6 +1,6 @@
-/* personalPortfolio/personalPortfolio.css */
+ /* personalPortfolio/personalPortfolio.css */
 
-/* Tags */
+/***** Tags *****/
 html {
     height: 100%;
 }
@@ -21,7 +21,7 @@ nav {
 
 nav .NavListItem {
     margin: 0;
-    padding: 5px;
+    padding: 3px 5px;
 }
 
 nav .ResumeListItem {
@@ -32,6 +32,11 @@ nav .ResumeListItem {
 nav .TargetListItem {
     margin: 0;
     padding: 5px;
+}
+
+ul {
+    padding: 10px 0;
+    /*border: 1px solid #000;*/
 }
 
 main {
@@ -52,6 +57,8 @@ figure {
     padding: 0;
     background: #FFF;
     border-radius: 2px;
+    /*border: 3px solid #000;*/
+
 }
 
 #HeadingName{
@@ -59,19 +66,23 @@ figure {
     color: #000;
     text-shadow: #000 1px 1px 1px;
     text-decoration: none;
-    padding: 0 200px 10px 10px;
+    margin-right: 200px;
+    padding: 0 10px;
 }
 
-#HeadingName a {
-
-}
-
-#HeadingName a:hover, #HeadingName a:focus, #HeadingName a:active {
-    font-size: 34px;
-    color: #000;
-    text-shadow: #000 1px 1px 1px;
+#HeadingName:hover {
+    font-size: 33px;
+    color: #e52d00;
+    text-shadow: #ec6c4c 1px 1px 1px;
     text-decoration: none;
 }
+
+ #HeadingName:focus, #HeadingName:active {
+     font-size: 33px;
+     color: #000;
+     text-shadow: #000 1px 1px 1px;
+     text-decoration: none;
+ }
 
 #HeadingTechnologies {
     font: 500 30px Tahoma, Geneva, serif;
@@ -190,10 +201,9 @@ figure {
 
 /***** Classes *****/
 .NavLink {
-    font: 700 19px Roboto, sans-serif;
+    font: 700 20px Roboto, sans-serif;
     color: #000;
     text-shadow: #000 1px 1px 1px;
-    padding: 0 10px;
     background: none;
 }
 
@@ -201,7 +211,6 @@ figure {
     font: 800 15px Arial, Verdana, sans-serif;
     color: #000;
     margin: 4px 0 0;
-    padding: 0 10px;
     background: none;
 }
 
@@ -290,52 +299,49 @@ figure {
     line-height: 0;
 }
 
-.nav>li>.NavLink:hover, .nav>li>.NavLink:focus {
+.nav>li>a {
+    padding: 0 15px;
+}
+
+.nav>li>.NavLink:hover {
     font-weight: bold;
     font-size: 20px;
-    color: #000;
+    color: #e52d00;
     margin-top: 0;
-    text-shadow: #191919 1px 1px 1px;
+    text-shadow: #ec6c4c 1px 1px 1px;
     background: #FFF;
     border: none;
     box-shadow: none;
     cursor: pointer;
 }
 
-.nav>li>.NavLink:active {
-    font-weight: bold;
-    font-size: 22px;
+ .nav>li>.NavLink:focus, .nav>li>.NavLink:active {
+    font-weight: 700;
+    font-size: 20px;
     color: #000;
-    text-shadow: #191919 1px 1px 1px;
+    text-shadow: #000 1px 1px 1px;
     margin-top: 0;
-    background: #FFF;
+    background: none;
     border: none;
     box-shadow: none;
 }
 
-.nav>li>.TargetLink:hover, .nav>li>.TargetLink:focus {
-    font-weight: bold;
-    font-size: 16px;
-    color: #000;
+.nav>li>.TargetLink:hover {
+
+    font-size: 15px;
+    color: #e52d00;
     background: #FFF;
     border: none;
     box-shadow: none;
     cursor: pointer;
 }
 
-.nav>li>.TargetLink:active {
-    font-weight: bold;
-    font-size: 16px;
+ .nav>li>.TargetLink:focus, .nav>li>.TargetLink:active {
+    font-weight: 800;
+    font-size: 15px;
     color: #000;
-    background: #FFF;
+    text-shadow: none;
+    background: none;
     border: none;
     box-shadow: none;
-}
-
-
-/***** Media Queries: Bootstrap ******/
-@media (min-width: 768px) {
-     {
-
-    }
 }
