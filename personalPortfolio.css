@@ -1,4 +1,4 @@
- /* personalPortfolio/personalPortfolio.css */
+/* personalPortfolio/personalPortfolio.css */
 
 /***** Tags *****/
 html {
@@ -62,12 +62,13 @@ figure {
 }
 
 #HeadingName{
-    font: bold 33px Tahoma, Geneva, serif;
+    font: bold 32px Tahoma, Geneva, serif;
     color: #000;
     text-shadow: #000 1px 1px 1px;
     text-decoration: none;
     margin-right: 200px;
     padding: 0 10px;
+    transition: font-size 1s;
 }
 
 #HeadingName:hover {
@@ -344,4 +345,57 @@ figure {
     background: none;
     border: none;
     box-shadow: none;
+}
+
+
+/***** Media Queries *****/
+/* Medium Devices */
+/* Small Devices */
+ @media only screen and (min-width: 423px) and (max-width: 767px) {
+
+     #HeadingName {
+         font-size: 30px;
+         margin-right: 150px;
+     }
+
+     #HeadingName:hover, #HeadingName:focus, #HeadingName:active {
+         font-size: 30px;
+     }
+
+ }
+
+ /* Extra Small Devices */
+@media only screen and (max-width: 422px) {
+
+    #HeadingName {
+        font-size: 23px;
+        margin-right: 100px;
+        /*border: 1px solid #000;*/
+    }
+
+    #HeadingName:hover, #HeadingName:focus, #HeadingName:active {
+        font-size: 23px;
+    }
+
+    .NavLink {
+        font: 800 16px Arial, Verdana, sans-serif;
+        color: #000;
+        text-shadow: none;
+    }
+
+    .TargetLink {
+        font-size: 14px;
+        color: #000;
+        text-shadow: none;
+    }
+
+    .nav>li>.NavLink:hover, .nav>li>.NavLink:focus, .nav>li>.NavLink:active {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .nav>li>.TargetLink:hover, .nav>li>.TargetLink:focus, .nav>li>.TargetLink:active {
+        font-size: 14px;
+        font-weight: 400;
+    }
 }
