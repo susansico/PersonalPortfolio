@@ -3,11 +3,12 @@
 /***** Tags *****/
 html {
     height: 100%;
+    font-size: 100%;
 }
 
 body {
     height: 100%;
-    font: 100%/1.5 Arial, Verdana, sans-serif;
+    font: 100%/1.5 Roboto, sans-serif;
     color: #FFF;
     margin: 0;
     padding: 0;
@@ -16,9 +17,9 @@ body {
 }
 
 nav {
-    margin: 20px 0 0 0;
+    margin: 1.25em 0 0 0;
     padding: 0;
-   /* border: 1px solid #e52d00;*/
+    /* border: 1px solid #e52d00;*/
 }
 
 nav .NavListItem {
@@ -37,8 +38,9 @@ nav .TargetListItem {
 }
 
 ul {
+    margin-left: 200px;
     padding: 10px 0;
-    /*border: 1px solid #e52d00;*/
+    border: 1px solid #e52d00;
 }
 
 main {
@@ -54,37 +56,39 @@ figure {
     /*border: 1px solid #e52d00;*/
 }
 
+figcaption {
+    padding: 0 0 .3125em 0;
+}
+
 
 /***** Ids *****/
 #HeaderRow {
     margin-top: 0;
     background: #FFF;
     border-radius: 2px;
-    /*border: 3px solid #000;*/
+    border: 3px solid #e52d00;
 
 }
 
 #HeadingName{
-    font: bold 32px Tahoma, Geneva, serif;
-    color: #000;
-    text-shadow: #000 1px 1px 1px;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #000; / *4c4c4c */
     text-decoration: none;
-    margin-right: 200px;
-    padding: 0 10px;
+    margin: 5px 200px 0 0;
+    padding: 0 10px 0 10px;
     transition: font-size 1s;
+    border: 1px solid #e52d00;
+    display: block;
 }
 
 #HeadingName:hover {
-    font-size: 33px;
-    color: #e52d00;
-    text-shadow: #ec6c4c 1px 1px 1px;
+    color: #000;
     text-decoration: none;
 }
 
  #HeadingName:focus, #HeadingName:active {
-     font-size: 33px;
      color: #000;
-     text-shadow: #000 1px 1px 1px;
      text-decoration: none;
  }
 
@@ -176,23 +180,22 @@ figure {
 }
 
 #AboutWords {
-    font: 165%/1.7em "Josefin San", sans-serif;
-    color: #efefef;
-    text-shadow: #ec6c4c 1px 1px 1px;
+    font-size: 1em;
+    color: #e2e2e2;
     text-align: right;
     margin-top: 30px;
 }
 
-#AboutWords p {
+/*#AboutWords p {
     color: #efefef;
-}
+}*/
 
-#AboutWords p:first-letter {
+/*#AboutWords p:first-letter {
     font-family: Calisto, Georgia, serif;
     font-size: 150%;
     font-weight: bold;
     color: #e52d00;
-}
+}*/
 
 #AboutImage img {
     margin: 30px 0 0 0;
@@ -205,9 +208,8 @@ figure {
 
 /***** Classes *****/
 .NavLink {
-    font: 700 20px Roboto, sans-serif;
-    color: #000;
-    text-shadow: #000 1px 1px 1px;
+    font-size: 1em;
+    color: #323232;
     background: none;
 }
 
@@ -255,7 +257,7 @@ figure {
 }
 
 .ProjectDescription {
-    font: 600 170%/1.0em "Josefin Sans", san-serif;
+    font: 600 .9em/.625em "Josefin Sans", san-serif;
     color: #ce2800;
     text-shadow: #e52d00 1px 1px 1px;
     text-align: center;
@@ -263,7 +265,7 @@ figure {
 }
 
 .RepoSite {
-    color: #ec6c4c;
+    color: #ef8166;
 }
 
 
@@ -275,20 +277,39 @@ figure {
     border: none;
 }
 
+.navbar-header {
+
+    border: 1px solid #000;
+}
+
 .navbar-default {
     background-color: #FFF;
     border-color: #FFF;
 }
 
 .navbar-default .navbar-toggle {
-    border: 3px solid #ec6c4c;
+    border: none;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     background-color: #FFF;
-    -webkit-box-shadow: 0 0 15px #ec6c4c;
-    box-shadow: 0 0 15px #ec6c4c
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #323232;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 40px;
+    height: 2px;
+    border-radius: 0;
+    margin-bottom: 13px;
+}
+
+.navbar-toggle:hover .icon-bar {
+    background-color: #f4ab99;
 }
 
 .navbar-default .navbar-collapse {
@@ -308,11 +329,9 @@ figure {
 }
 
 .nav>li>.NavLink:hover {
-    font-weight: bold;
-    font-size: 20px;
-    color: #e52d00;
+    font-size: 1em;
+    color: #963;
     margin-top: 0;
-    text-shadow: #ec6c4c 1px 1px 1px;
     background: #FFF;
     border: none;
     box-shadow: none;
@@ -320,10 +339,8 @@ figure {
 }
 
  .nav>li>.NavLink:focus, .nav>li>.NavLink:active {
-    font-weight: 700;
-    font-size: 20px;
-    color: #000;
-    text-shadow: #000 1px 1px 1px;
+    font-size: 1em;
+    color: #963;
     margin-top: 0;
     background: none;
     border: none;
@@ -354,26 +371,19 @@ figure {
 /***** Media Queries *****/
 /* Medium Devices */
 /* Small Devices */
- @media only screen and (min-width: 423px) and (max-width: 767px) {
+@media only screen and (min-width: 423px) and (max-width: 767px) {
 
      #HeadingName {
-         font-size: 30px;
-         margin-right: 150px;
+        margin: 10px 150px 0 0;
      }
-
-     #HeadingName:hover, #HeadingName:focus, #HeadingName:active {
-         font-size: 30px;
-     }
-
  }
 
  /* Extra Small Devices */
-@media only screen and (max-width: 422px) {
+/*@media only screen and (max-width: 422px) {
 
     #HeadingName {
         font-size: 23px;
         margin-right: 100px;
-        /*border: 1px solid #000;*/
     }
 
     #HeadingName:hover, #HeadingName:focus, #HeadingName:active {
@@ -401,4 +411,4 @@ figure {
         font-size: 14px;
         font-weight: 400;
     }
-}
+}*/

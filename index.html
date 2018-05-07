@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Dekko' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="personalPortfolio.css" title="Palo Alto Places Stylesheet" rel="stylesheet" type="text/css">
@@ -31,8 +31,10 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" id="HeadingName" href="#/">Susan Sico</a>
+                    <!--<a class="navbar-brand" id="HeadingName" href="#/">Susan Sico</a>-->
+                    <a id="HeadingName" href="#/">Susan Sico</a>
                 </div>
+
 
                 <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
                     <ul class="nav nav-pills">
@@ -41,15 +43,13 @@
                         <li class="NavListItem" role="presentation"><a class="NavLink" href="#/projects">Projects</a></li>
                         <li class="NavListItem" role="presentation"><a class="NavLink" href="#/about">About</a></li>
 
-                        <li class="ResumeListItem"><a class="TargetLink" href="images/susan-sico-resume.pdf"
-                        target="_blank">Resume</a></li>
-                        <li class="TargetListItem">
-                        <a class="TargetLink" href="https://github.com/susansico" target="_blank">GitHub</a></li>
-                        <li class="TargetListItem" role="presentation"><a class="TargetLink" href="http://www.linkedin.com/in/susansico" target="_blank">LinkedIn</a></li>
-                        <li class="TargetListItem" role="presentation">
+                        <li class="NavListItem"><a class="NavLink" href="images/susan-sico-resume.pdf" target="_blank">Resume</a></li>
+                        <li class="NavListItem"><a class="NavLink" href="https://github.com/susansico" target="_blank">GitHub</a></li>
+                        <li class="NavListItem" role="presentation"><a class="NavLink" href="http://www.linkedin.com/in/susansico" target="_blank">LinkedIn</a></li>
+                        <!--<li class="TargetListItem" role="presentation">
                         <a class="TargetLink" href="mailto:susan.sico@gmail.com">susan.sico@gmail.com</a></li>
                         <li class="TargetListItem" role="presentation"><a class="TargetLink" href="tel:+16507993206">(650)
-                        799-3206</a></li>
+                        799-3206</a></li>-->
 
                     </ul>
                 </div>
@@ -57,7 +57,7 @@
         </div> <!-- NavbarCollapse Controller -->
     </div> <!-- Row -->
 
-    <div resize>window.width: {{width}}<br>window.height: {{height}}</div>
+    <div style="font-size:10px;" resize>window.width: {{width}}<br>window.height: {{height}}</div>
 
     <main>
 
