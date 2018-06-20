@@ -7,8 +7,8 @@ app.config(function($routeProvider) {
     $routeProvider
 
         .when("/", {
-            templateUrl: "./templates/home.html",
-            controller: "HomeController"
+            templateUrl: "./templates/technologies.html",
+            controller: "TechnologiesController"
         })
         .when("/projects", {
             templateUrl: "./templates/projects.html",

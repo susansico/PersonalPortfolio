@@ -24,33 +24,24 @@
             <nav class="navbar navbar-default" role="navigation">
 
                 <div class="navbar-header">
-
                     <button type="button" class="navbar-toggle" ng-click="isNavCollapsed=!isNavCollapsed">
                             <span class="sr-only">Toggle Navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                     </button>
-                    <!--<a class="navbar-brand" id="HeadingName" href="#/">Susan Sico</a>-->
                     <a id="HeadingName" href="#/">Susan Sico</a>
                 </div>
 
-
                 <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
                     <ul class="nav nav-pills">
+                        <li class="LeftFloat" role="presentation"><a href="#/projects">Projects</a></li>
+                        <li class="LeftFloat" role="presentation"><a href="#/about">About</a></li>
+                        <li class="LeftFloat" role="presentation"><a href="#/Contact">Contact</a></li>
 
-                        <li class="NavListItem" role="presentation"><a class="NavLink" href="#/">Home</a></li>
-                        <li class="NavListItem" role="presentation"><a class="NavLink" href="#/projects">Projects</a></li>
-                        <li class="NavListItem" role="presentation"><a class="NavLink" href="#/about">About</a></li>
-
-                        <li class="NavListItem"><a class="NavLink" href="images/susan-sico-resume.pdf" target="_blank">Resume</a></li>
-                        <li class="NavListItem"><a class="NavLink" href="https://github.com/susansico" target="_blank">GitHub</a></li>
-                        <li class="NavListItem" role="presentation"><a class="NavLink" href="http://www.linkedin.com/in/susansico" target="_blank">LinkedIn</a></li>
-                        <!--<li class="TargetListItem" role="presentation">
-                        <a class="TargetLink" href="mailto:susan.sico@gmail.com">susan.sico@gmail.com</a></li>
-                        <li class="TargetListItem" role="presentation"><a class="TargetLink" href="tel:+16507993206">(650)
-                        799-3206</a></li>-->
-
+                        <li class="RightFloat" role="presentation"><a class="NavLink" href="images/susan-sico-resume.pdf" target="_blank">Resume</a></li>
+                        <li class="RightFloat" role="presentation"><a class="NavLink" href="https://github.com/susansico" target="_blank">GitHub</a></li>
+                        <li class="RightFloat" role="presentation"><a class="NavLink" href="http://www.linkedin.com/in/susansico" target="_blank">LinkedIn</a></li>
                     </ul>
                 </div>
             </nav>
@@ -65,8 +56,21 @@
 
     </main>
 
+    <div class="row">
+
+        <a id="Contact"></a>
+
+        <footer role="contentinfo">
+
+            <address>Susan Sico Portfolio <a class="EmailMobile" href="tel: 16507993206"> Mobile: +1 (650) 799-3206</a>
+            <a class="EmailMobile" href="mailto: susan.sico@gmail.com">Email: susan.sico@gmail.com &nbsp;&nbsp;&nbsp;</a></address>
+
+        </footer>
+
+    </div>
+
     <script src="app.js"></script>
-    <script src="./controllers/home.js"></script>
+    <script src="./controllers/technologies.js"></script>
     <script src="./controllers/projects.js"></script>
     <script src="./controllers/about.js"></script>
 

@@ -1,0 +1,414 @@
+/* personalPortfolio/personalPortfolio.css */
+
+/***** Tags *****/
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    height: 100%;
+    font: 100%/1.5 Roboto, sans-serif;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    /*border: 1px solid #e52d00;*/
+}
+
+nav {
+    margin: 1.25em 0 0 0;
+    padding: 0;
+    /* border: 1px solid #e52d00;*/
+}
+
+nav .NavListItem {
+    margin: 0;
+    padding: 3px 5px;
+}
+
+nav .ResumeListItem {
+    margin: 0;
+    padding: 5px;
+}
+
+nav .TargetListItem {
+    margin: 0;
+    padding: 5px;
+}
+
+ul {
+    margin-left: 200px;
+    padding: 10px 0;
+    border: 1px solid #e52d00;
+}
+
+main {
+
+    margin: 0;
+    padding: 20px 0;
+    display: block;
+    /*border: 1px solid #e52d00;*/
+}
+
+figure {
+    padding: 30px 0 0 0;
+    /*border: 1px solid #e52d00;*/
+}
+
+figcaption {
+    padding: 0 0 .3125em 0;
+}
+
+
+/***** Ids *****/
+#HeaderRow {
+    margin-top: 0;
+    background: #FFF;
+    border-radius: 2px;
+    border: 3px solid #e52d00;
+
+}
+
+#HeadingName{
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #000; / *4c4c4c */
+    text-decoration: none;
+    margin: 5px 200px 0 0;
+    padding: 0 10px 0 10px;
+    transition: font-size 1s;
+    border: 1px solid #e52d00;
+    display: block;
+}
+
+#HeadingName:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+ #HeadingName:focus, #HeadingName:active {
+     color: #000;
+     text-decoration: none;
+ }
+
+#HeadingTechnologies {
+    font: 500 30px Tahoma, Geneva, serif;
+    color: #e52d00;
+    text-align: center;
+    margin: 70px 0 0 0;
+    padding: 0;
+}
+
+#BusinessCardOrangeHalf {
+    margin-top: 50px;
+    padding: 15px 10px 100px 0;
+    border-top: 2px solid #ec6c4c;
+    border-bottom: 2px solid #ec6c4c;
+    border-left: 2px solid #ec6c4c;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #e52d00;
+}
+
+#BusinessCardWhiteHalf {
+    margin-top: 50px;
+    padding: 15px 0 14px 0;
+    border-top: 2px solid #ec6c4c;
+    border-bottom: 2px solid #ec6c4c;
+    border-right: 2px solid #ec6c4c;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #FFF;
+}
+
+#BusinessCardJobTitle  {
+    font: bold 24px Arial, Verdana, sans-serif;
+    color: #000;
+    text-shadow: #000 1px 1px 1px;
+    margin: 20px 0 50px 10px;
+}
+
+#BusinessCardJobTitleWhite {
+    font: bold 24px Arial, Verdana, sans-serif;
+    color: #FFF;
+    text-shadow: #FFF 1px 1px 1px;
+    margin: 20px 0 50px;
+}
+
+#MobileAndEmail {
+    font: 12px Arial, Verdana, sans-serif;
+    color: #000;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 20px 10px;
+}
+
+#Mobile {
+    margin: 50px 0 0 0;
+    padding: 0;
+}
+
+#Email {
+    margin: 0;
+    padding: 0;
+}
+
+#Mobile a, #Email a {
+    color: #000;
+    text-decoration: none;
+}
+
+#MobileLabel {
+    color: #ec6c4c;
+    margin: 0;
+    padding:0 2px 0 0;
+}
+
+#EmailLabel {
+    color: #ec6c4c;
+    margin: 0;
+    padding: 0 9px 0 0;
+}
+
+#PaloAltoPlaces {
+    border: 1px solid #333;
+}
+
+#BookLovers {
+    border-top: 1px solid #333;
+}
+
+#AboutWords {
+    font-size: 1em;
+    color: #e2e2e2;
+    text-align: right;
+    margin-top: 30px;
+}
+
+/*#AboutWords p {
+    color: #efefef;
+}*/
+
+/*#AboutWords p:first-letter {
+    font-family: Calisto, Georgia, serif;
+    font-size: 150%;
+    font-weight: bold;
+    color: #e52d00;
+}*/
+
+#AboutImage img {
+    margin: 30px 0 0 0;
+    border: 1px solid #ec6c4c;
+    -webkit-box-shadow: 0 0 15px #ec6c4c;
+    box-shadow: 0 0 15px #ec6c4c;
+    border-radius: 10px;
+}
+
+
+/***** Classes *****/
+.NavLink {
+    font-size: 1em;
+    color: #323232;
+    background: none;
+}
+
+.TargetLink {
+    font: 800 15px Arial, Verdana, sans-serif;
+    color: #000;
+    margin: 4px 0 0;
+    background: none;
+}
+
+.HeadingProjectAndAbout {
+    font: 500 30px Tahoma, Geneva, serif;
+    color: #e52d00;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.TechnologyLabels {
+    font: 700 18px Arial, Verdana, sans-serif;
+    color: #000;
+    text-align: right;
+}
+
+.TechnologySkills {
+    font: 16px Arial, Verdana, sans-serif;
+    color: #000;
+    text-align: left;
+    padding: 3px 0 0 10px;
+}
+
+.ProjectListStyle {
+    margin: 0 0 0 -10px; /* Where did the margin come from? */
+    padding: 0;
+}
+
+.ProjectListItemStyle {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.ProjectName {
+    font: 600 115%/1.0em "Josefin Sans", sans-serif;
+}
+
+.ProjectDescription {
+    font: 600 .9em/.625em "Josefin Sans", san-serif;
+    color: #ce2800;
+    text-shadow: #e52d00 1px 1px 1px;
+    text-align: center;
+    margin: 10px 0 0 -15px;
+}
+
+.RepoSite {
+    color: #ef8166;
+}
+
+
+/***** Bootstrap Classes *****/
+.navbar {
+    position: relative;
+    min-height: 0;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.navbar-header {
+
+    border: 1px solid #000;
+}
+
+.navbar-default {
+    background-color: #FFF;
+    border-color: #FFF;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #323232;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 40px;
+    height: 2px;
+    border-radius: 0;
+    margin-bottom: 13px;
+}
+
+.navbar-toggle:hover .icon-bar {
+    background-color: #f4ab99;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: #FFF;
+}
+
+.navbar-brand {
+    float: none;
+    height: auto;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.nav>li>a {
+    padding: 0 15px;
+}
+
+.nav>li>.NavLink:hover {
+    font-size: 1em;
+    color: #963;
+    margin-top: 0;
+    background: #FFF;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+ .nav>li>.NavLink:focus, .nav>li>.NavLink:active {
+    font-size: 1em;
+    color: #963;
+    margin-top: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.nav>li>.TargetLink:hover {
+
+    font-size: 15px;
+    color: #e52d00;
+    background: #FFF;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+ .nav>li>.TargetLink:focus, .nav>li>.TargetLink:active {
+    font-weight: 800;
+    font-size: 15px;
+    color: #000;
+    text-shadow: none;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+/***** Media Queries *****/
+/* Medium Devices */
+/* Small Devices */
+@media only screen and (min-width: 423px) and (max-width: 767px) {
+
+     #HeadingName {
+        margin: 10px 150px 0 0;
+     }
+ }
+
+ /* Extra Small Devices */
+/*@media only screen and (max-width: 422px) {
+
+    #HeadingName {
+        font-size: 23px;
+        margin-right: 100px;
+    }
+
+    #HeadingName:hover, #HeadingName:focus, #HeadingName:active {
+        font-size: 23px;
+    }
+
+    .NavLink {
+        font: 800 16px Arial, Verdana, sans-serif;
+        color: #000;
+        text-shadow: none;
+    }
+
+    .TargetLink {
+        font-size: 14px;
+        color: #000;
+        text-shadow: none;
+    }
+
+    .nav>li>.NavLink:hover, .nav>li>.NavLink:focus, .nav>li>.NavLink:active {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .nav>li>.TargetLink:hover, .nav>li>.TargetLink:focus, .nav>li>.TargetLink:active {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}*/

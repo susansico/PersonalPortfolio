@@ -2,7 +2,7 @@
 
 var app = angular.module("PersonalPortfolioApp");
 
-app.controller("HomeController", ["$scope", function($scope) {
+app.controller("TechnologiesController", ["$scope", function($scope) {
 
 
 }]);

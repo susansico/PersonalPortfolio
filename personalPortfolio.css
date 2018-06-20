@@ -3,172 +3,108 @@
 /***** Tags *****/
 html {
     height: 100%;
-    font-size: 100%;
+    font-size: 100%; /* Inherits from Browser instead of Bootstrap. Most browser have default font size of 16px. */
 }
 
 body {
     height: 100%;
-    font: 100%/1.5 Roboto, sans-serif;
-    color: #FFF;
+    font: 100%/1.5 Roboto, sans-serif; /* Font size is 100% of html font size - 16px. */
+    color: #000;
     margin: 0;
     padding: 0;
-    background: #000;
-    /*border: 1px solid #e52d00;*/
+    background: #FFF;
 }
 
 nav {
-    margin: 1.25em 0 0 0;
+    margin: 1.25em 0 0 0; /* Em is equal to current font size which is 16px.  Right margin: 16px x 1.25 = 20px.  Margin size will change accordingly for different screen size resolutions. */
     padding: 0;
     /* border: 1px solid #e52d00;*/
 }
 
-nav .NavListItem {
-    margin: 0;
-    padding: 3px 5px;
+nav ul {
+    padding: .625em 0; /* 10px  10/16 */
+    float: right;
 }
 
-nav .ResumeListItem {
+nav ul li {
+    font-size: 1em; /* 16px */
     margin: 0;
-    padding: 5px;
+    padding: .1875em .3125em; /* 3px 5px */
+    background: none;
+    float: right;
 }
 
-nav .TargetListItem {
-    margin: 0;
-    padding: 5px;
+nav ul li a {
+    color: #666;
 }
 
-ul {
-    margin-left: 200px;
-    padding: 10px 0;
-    border: 1px solid #e52d00;
-}
+/*nav ul li a:visited {
+    color: #a3a3a3;
+    text-decoration:none;
+}*/
 
 main {
-
-    margin: 0;
-    padding: 20px 0;
+    width: 100%; /* .9028%; 1300px/1440px (My Mac) */
+    margin: 0 0 2.5em 0; /* 16px2.5 40px */
+    padding: 1.25em 0; /* 20px */
+    background: #000; /*url(images/black-charcoal-swirl.jpeg) center/100% no-repeat;*/
     display: block;
-    /*border: 1px solid #e52d00;*/
 }
 
 figure {
-    padding: 30px 0 0 0;
-    /*border: 1px solid #e52d00;*/
+    padding: 1.875em 0 0 0; /* 30px */
 }
 
 figcaption {
-    padding: 0 0 .3125em 0;
+    font-size: .8125em; /* 13px 13/16 */
+    font-weight: 600;
+    color: #CCC;
+    text-align: center;
+    margin: .7692em  0 0 -1.1538em; /* 10px .7692X13x13=9.9996 15px 1.1538x13=14.9994 */
+    padding: 0 0 .3846em 0; /* 5px .3846x13=4.9998px */
+}
+
+figcaption span {
+    font-size: .8462em; /* 11px 11/13=11.0006 */
+}
+
+footer {
+    color: #a3a3a3;
+    margin: 0 .9375em; /* 15/16 15px */
 }
 
 
 /***** Ids *****/
 #HeaderRow {
-    margin-top: 0;
-    background: #FFF;
-    border-radius: 2px;
-    border: 3px solid #e52d00;
-
+    padding-top: 1.25em; /* 20px 20/16 */
+    padding-bottom: 1.25em; /* 20px 20/16 */
+    border-radius: .125em; /* 2px 2/16 */
 }
 
 #HeadingName{
-    font-size: 1.4em;
+    font-size: 1.4em; /* 22px 1.4x16=22.4 */
     font-weight: 600;
-    color: #000; / *4c4c4c */
+    color: #000;
     text-decoration: none;
-    margin: 5px 200px 0 0;
-    padding: 0 10px 0 10px;
+    margin: .3125em 0 0 0; /* 5px 5/16 */
+    padding: 0 .625em 0 .625em; /* 10px 10/16 */
     transition: font-size 1s;
-    border: 1px solid #e52d00;
     display: block;
+    float: left; /* Had left and right margins for ul and HeadingName. */
 }
 
 #HeadingName:hover {
-    color: #000;
+    color: #963;
     text-decoration: none;
 }
 
  #HeadingName:focus, #HeadingName:active {
      color: #000;
      text-decoration: none;
- }
-
-#HeadingTechnologies {
-    font: 500 30px Tahoma, Geneva, serif;
-    color: #e52d00;
-    text-align: center;
-    margin: 70px 0 0 0;
-    padding: 0;
 }
 
-#BusinessCardOrangeHalf {
-    margin-top: 50px;
-    padding: 15px 10px 100px 0;
-    border-top: 2px solid #ec6c4c;
-    border-bottom: 2px solid #ec6c4c;
-    border-left: 2px solid #ec6c4c;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background: #e52d00;
-}
-
-#BusinessCardWhiteHalf {
-    margin-top: 50px;
-    padding: 15px 0 14px 0;
-    border-top: 2px solid #ec6c4c;
-    border-bottom: 2px solid #ec6c4c;
-    border-right: 2px solid #ec6c4c;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+#FooterRow {
     background: #FFF;
-}
-
-#BusinessCardJobTitle  {
-    font: bold 24px Arial, Verdana, sans-serif;
-    color: #000;
-    text-shadow: #000 1px 1px 1px;
-    margin: 20px 0 50px 10px;
-}
-
-#BusinessCardJobTitleWhite {
-    font: bold 24px Arial, Verdana, sans-serif;
-    color: #FFF;
-    text-shadow: #FFF 1px 1px 1px;
-    margin: 20px 0 50px;
-}
-
-#MobileAndEmail {
-    font: 12px Arial, Verdana, sans-serif;
-    color: #000;
-    text-align: left;
-    margin: 0;
-    padding: 0 0 20px 10px;
-}
-
-#Mobile {
-    margin: 50px 0 0 0;
-    padding: 0;
-}
-
-#Email {
-    margin: 0;
-    padding: 0;
-}
-
-#Mobile a, #Email a {
-    color: #000;
-    text-decoration: none;
-}
-
-#MobileLabel {
-    color: #ec6c4c;
-    margin: 0;
-    padding:0 2px 0 0;
-}
-
-#EmailLabel {
-    color: #ec6c4c;
-    margin: 0;
-    padding: 0 9px 0 0;
 }
 
 #PaloAltoPlaces {
@@ -179,107 +115,62 @@ figcaption {
     border-top: 1px solid #333;
 }
 
-#AboutWords {
-    font-size: 1em;
-    color: #e2e2e2;
-    text-align: right;
-    margin-top: 30px;
+#AboutDiv{
+    width: .9028%; /* 1300px/1440px (My Mac) */
+    margin: 0;
+    padding: 1.25em 0; /* 20px */
+    background: #FFF;
 }
 
-/*#AboutWords p {
-    color: #efefef;
-}*/
-
-/*#AboutWords p:first-letter {
-    font-family: Calisto, Georgia, serif;
-    font-size: 150%;
-    font-weight: bold;
-    color: #e52d00;
-}*/
+#AboutWords {
+    font-size: 1em;
+    color: #000;
+    margin-top: 3.125em; /* 50px 50/16 */
+}
 
 #AboutImage img {
     margin: 30px 0 0 0;
-    border: 1px solid #ec6c4c;
-    -webkit-box-shadow: 0 0 15px #ec6c4c;
-    box-shadow: 0 0 15px #ec6c4c;
     border-radius: 10px;
 }
 
 
 /***** Classes *****/
-.NavLink {
-    font-size: 1em;
-    color: #323232;
-    background: none;
-}
 
-.TargetLink {
-    font: 800 15px Arial, Verdana, sans-serif;
-    color: #000;
-    margin: 4px 0 0;
-    background: none;
-}
-
-.HeadingProjectAndAbout {
-    font: 500 30px Tahoma, Geneva, serif;
-    color: #e52d00;
-    text-align: center;
-    margin: 20px 0 0 0;
+.ProjectUL {
+    margin: 0 0 0 -.625em; /* 10px 10/16 */
     padding: 0;
 }
 
-.TechnologyLabels {
-    font: 700 18px Arial, Verdana, sans-serif;
-    color: #000;
-    text-align: right;
-}
-
-.TechnologySkills {
-    font: 16px Arial, Verdana, sans-serif;
-    color: #000;
-    text-align: left;
-    padding: 3px 0 0 10px;
-}
-
-.ProjectListStyle {
-    margin: 0 0 0 -10px; /* Where did the margin come from? */
-    padding: 0;
-}
-
-.ProjectListItemStyle {
+.ProjectUL li {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-.ProjectName {
-    font: 600 115%/1.0em "Josefin Sans", sans-serif;
-}
-
-.ProjectDescription {
-    font: 600 .9em/.625em "Josefin Sans", san-serif;
-    color: #ce2800;
-    text-shadow: #e52d00 1px 1px 1px;
-    text-align: center;
-    margin: 10px 0 0 -15px;
-}
-
 .RepoSite {
-    color: #ef8166;
+    font-size: .9231em; /* 12px 12/13 .9231x13=12.0003 */
+    color: #a3a3a3;
+}
+
+.EmailMobile:link {
+    font-size: .9375em; /* 15px */
+    color: #666;
+    text-decoration: none;
+    float: right;
+}
+
+.EmailMobile:hover {
+    color: #963;
 }
 
 
 /***** Bootstrap Classes *****/
+
 .navbar {
     position: relative;
     min-height: 0;
     margin-bottom: 5px;
     border: none;
-}
-
-.navbar-header {
-
-    border: 1px solid #000;
 }
 
 .navbar-default {
@@ -328,7 +219,7 @@ figcaption {
     padding: 0 15px;
 }
 
-.nav>li>.NavLink:hover {
+.nav>li>a:hover {
     font-size: 1em;
     color: #963;
     margin-top: 0;
@@ -338,7 +229,7 @@ figcaption {
     cursor: pointer;
 }
 
- .nav>li>.NavLink:focus, .nav>li>.NavLink:active {
+ .nav>li>a:active {
     font-size: 1em;
     color: #963;
     margin-top: 0;
@@ -347,68 +238,63 @@ figcaption {
     box-shadow: none;
 }
 
-.nav>li>.TargetLink:hover {
-
-    font-size: 15px;
-    color: #e52d00;
-    background: #FFF;
-    border: none;
-    box-shadow: none;
-    cursor: pointer;
-}
-
- .nav>li>.TargetLink:focus, .nav>li>.TargetLink:active {
-    font-weight: 800;
-    font-size: 15px;
-    color: #000;
-    text-shadow: none;
+.nav>li>a:focus {
+    font-size: 1em;
+    color: #a3a3a3;
+    margin-top: 0;
     background: none;
     border: none;
     box-shadow: none;
 }
 
-
-/***** Media Queries *****/
-/* Medium Devices */
-/* Small Devices */
-@media only screen and (min-width: 423px) and (max-width: 767px) {
-
-     #HeadingName {
-        margin: 10px 150px 0 0;
-     }
- }
-
- /* Extra Small Devices */
-/*@media only screen and (max-width: 422px) {
-
-    #HeadingName {
-        font-size: 23px;
-        margin-right: 100px;
+/***** @media Bootstrap Classes *****/
+@media (min-width: 1080px) {
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
-
-    #HeadingName:hover, #HeadingName:focus, #HeadingName:active {
-        font-size: 23px;
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
     }
-
-    .NavLink {
-        font: 800 16px Arial, Verdana, sans-serif;
-        color: #000;
-        text-shadow: none;
+    .navbar-collapse.in {
+        overflow-y: visible;
     }
-
-    .TargetLink {
-        font-size: 14px;
-        color: #000;
-        text-shadow: none;
+    .navbar-toggle {
+        display: none;
     }
-
-    .nav>li>.NavLink:hover, .nav>li>.NavLink:focus, .nav>li>.NavLink:active {
-        font-size: 16px;
-        font-weight: 500;
+    .RightFloat {
+        float: none;
     }
-
-    .nav>li>.TargetLink:hover, .nav>li>.TargetLink:focus, .nav>li>.TargetLink:active {
-        font-size: 14px;
-        font-weight: 400;
+    .LeftFloat {
+        float: none;
     }
-}*/
+}
+
+@media (max-width: 1079px) { /* Display block? */
+    .nav-pills > li {
+        float: none;
+    }
+    .RightFloat {
+        float: right;
+    }
+    .LeftFloat {
+        float: left;
+    }
+}
+
+@media (max-width: 659px) {
+    .nav-pills > li {
+        float: left;
+    }
+    .RightFloat {
+        float: none;
+    }
+    .LeftFloat {
+        float: none;
+    }
+}
