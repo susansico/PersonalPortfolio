@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Dekko' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    <link href="personalPortfolio.css" title="Palo Alto Places Stylesheet" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet" type="text/css">
+    <link href="personalPortfolio.css" title="Personal Portfolio Stylesheet" rel="stylesheet" type="text/css">
+    <script src="angular.js"></script>
+    <script src="angular-ui-router.js"></script>
+    <script src="angular-animate.js"></script>
     <script src="ui-bootstrap-2.4.0.js"></script>
     <title>Susan Sico Portfolio</title>
 </head>
 
-<body class="container-fluid" ng-cloak>
+<body class="container-fluid">
 
     <div class="row" id="HeaderRow">
 
@@ -24,46 +23,55 @@
             <nav class="navbar navbar-default" role="navigation">
 
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" ng-click="isNavCollapsed=!isNavCollapsed">
+                    <button type="button" id="IconButton" class="navbar-toggle" ng-click="isNavCollapsed=!isNavCollapsed"
+                    ng-class="isNavCollapsed ? addClass('IconButton') : removeClass('IconButton')">
                             <span class="sr-only">Toggle Navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                            <span class="icon-bar TopBar"> </span>
+                            <span class="icon-bar MiddleBar"> </span>
+                            <span class="icon-bar BottomBar"> </span>
                     </button>
-                    <a id="HeadingName" href="#/">Susan Sico</a>
+                    <a id="HeadingName" ui-sref="/">Susan Sico</a>
                 </div>
 
-                <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
-                    <ul class="nav nav-pills">
-                        <li class="LeftFloat" role="presentation"><a href="#/projects">Projects</a></li>
-                        <li class="LeftFloat" role="presentation"><a href="#/about">About</a></li>
-                        <li class="LeftFloat" role="presentation"><a href="#/Contact">Contact</a></li>
+                <div class="collapse navbar-collapse" id="Menu" uib-collapse="isNavCollapsed">
+                    <ul class="nav nav-pills" id="RightMenuColumn">
+                        <li role="presentation"><a class="NavLink" href="images/susan-sico-resume.pdf" target="_blank">Resume</a></li>
+                        <li role="presentation"><a class="NavLink" href="https://github.com/susansico" target="_blank">GitHub</a></li>
+                        <li role="presentation"><a class="NavLink" href="http://www.linkedin.com/in/susansico" target="_blank">LinkedIn</a></li>
+                    </ul>
 
-                        <li class="RightFloat" role="presentation"><a class="NavLink" href="images/susan-sico-resume.pdf" target="_blank">Resume</a></li>
-                        <li class="RightFloat" role="presentation"><a class="NavLink" href="https://github.com/susansico" target="_blank">GitHub</a></li>
-                        <li class="RightFloat" role="presentation"><a class="NavLink" href="http://www.linkedin.com/in/susansico" target="_blank">LinkedIn</a></li>
+                    <ul class="nav nav-pills" id="LeftMenuColumn">
+                        <li role="presentation"><a ui-sref-active="HighlightCurrentMenuItem" ui-sref="technologies">Technologies</a></li>
+                        <li role="presentation"><a ui-sref-active="HighlightCurrentMenuItem" ui-sref="projects">Projects</a></li>
+                        <li role="presentation"><a ui-sref-active="HighlightCurrentMenuItem" ui-sref="contact">Contact</a></li>
+                    </ul>
+
+                    <ul class="nav nav-pills" id="VerticalMenuColumn">
+                        <li role="presentation"><a ui-sref-active="HighlightCurrentMenuItem" ui-sref="technologies">Technologies</a></li>
+                        <li role="presentation"><a ui-sref-active="HighlightCurrentMenuItem" ui-sref="projects">Projects</a></li>
+                        <li role="presentation"><a ui-sref-active="HighlightCurrentMenuItem" ui-sref="contact">Contact</a></li>
+                        <li role="presentation"><a class="NavLink" href="images/susan-sico-resume.pdf" target="_blank">Resume</a></li>
+                        <li role="presentation"><a class="NavLink" href="https://github.com/susansico" target="_blank">GitHub</a></li>
+                        <li role="presentation"><a class="NavLink" href="http://www.linkedin.com/in/susansico" target="_blank">LinkedIn</a></li>
                     </ul>
                 </div>
             </nav>
         </div> <!-- NavbarCollapse Controller -->
     </div> <!-- Row -->
 
-    <div style="font-size:10px;" resize>window.width: {{width}}<br>window.height: {{height}}</div>
+    <!--<div style="font-size:10px;" resize>window.width: {{width}}<br>window.height: {{height}}</div>-->
 
     <main>
 
-            <div ng-view></div>
+        <div ui-view></div>
 
     </main>
 
     <div class="row">
 
-        <a id="Contact"></a>
-
         <footer role="contentinfo">
 
-            <address>Susan Sico Portfolio <a class="EmailMobile" href="tel: 16507993206"> Mobile: +1 (650) 799-3206</a>
-            <a class="EmailMobile" href="mailto: susan.sico@gmail.com">Email: susan.sico@gmail.com &nbsp;&nbsp;&nbsp;</a></address>
+            <address><span>Susan Sico Portfolio</span> <a class="EmailMobileFooter" href="tel: 16507993206"><span id="PhoneNumber">+1 (650) 799-3206</span></a> <a class="EmailMobileFooter" href="mailto: susan.sico@gmail.com">susan.sico@gmail.com &nbsp;&nbsp;&nbsp;</a></address>
 
         </footer>
 
@@ -72,7 +80,7 @@
     <script src="app.js"></script>
     <script src="./controllers/technologies.js"></script>
     <script src="./controllers/projects.js"></script>
-    <script src="./controllers/about.js"></script>
+    <script src="./controllers/contact.js"></script>
 
 </body>
 </html>

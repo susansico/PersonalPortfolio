@@ -59,6 +59,7 @@ angular.module('ui.bootstrap.collapse', [])
             .then(function() {
               element.removeClass('collapse')
                 .addClass('collapsing')
+
                 .attr('aria-expanded', true)
                 .attr('aria-hidden', false);
 
@@ -85,6 +86,7 @@ angular.module('ui.bootstrap.collapse', [])
         function expandDone() {
           element.removeClass('collapsing')
             .addClass('collapse')
+
             .css(css);
           expandedExpr(scope);
         }

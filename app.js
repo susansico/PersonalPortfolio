@@ -1,28 +1,51 @@
 /* personalPortfolio app.js */
 
-var app = angular.module("PersonalPortfolioApp", ["ngRoute", "ui.bootstrap"]);
+var app = angular.module("PersonalPortfolioApp", ["ui.router", "ui.bootstrap", "ngAnimate"]);
 
-app.config(function($routeProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
 
-    $routeProvider
+    $urlRouterProvider
 
-        .when("/", {
-            templateUrl: "./templates/technologies.html",
-            controller: "TechnologiesController"
+        .otherwise("/");
+
+    $stateProvider
+
+        .state("/", {
+            url: "/",
+            templateUrl: "/templates/home.html"
         })
-        .when("/projects", {
-            templateUrl: "./templates/projects.html",
-            controller: "ProjectsController"
+        .state("technologies", {
+            url: "/technologies",
+            templateUrl: "/templates/technologies.html"
         })
-        .when("/about", {
-            templateUrl: "./templates/about.html",
-            controller: "AboutController"
+        .state("projects", {
+            url: "/projects",
+            templateUrl: "/templates/projects.html"
+        })
+        .state("contact", {
+            url: "/contact",
+            templateUrl: "/templates/contact.html"
         });
 });
 
 app.controller("NavbarCollapse",["$scope", function($scope) {
 
     $scope.isNavCollapsed = true;
+
+    $scope.addClass = function(elementId) {
+
+    let element = document.getElementById(elementId);
+
+        element.classList.add("collapsed");
+    };
+
+    $scope.removeClass = function(elementId) {
+
+        let element = document.getElementById(elementId);
+
+        element.classList.remove("collapsed");
+    };
+
 }]);
 
 app.directive("resize", function($window) {
@@ -42,3 +65,4 @@ app.directive("resize", function($window) {
         });
     };
 });
+
